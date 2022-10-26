@@ -1,0 +1,152 @@
+.MyBackground{
+    background-image: url('https://www.kibrispdr.org/data/29/chill-wallpaper-hd-11.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background: linear-gradient(to top, rgba(0,0,0,5));
+    width:100vw;
+    height:100vh;
+    font-family: sans-serif;
+    opacity: 99%;
+}
+
+.logo h1{
+    width: 100px;
+    height: 30px;
+    font-family:Cambria;
+    padding: 0;
+    text-align: center;
+    margin:2px, 2px, 2px, 2px;
+    color:darksalmon;
+}
+
+.navbar{
+    background-color: #333;
+    opacity: 0.5;
+    position: sticky;
+    margin-top: 20px;
+}
+
+.navbar ul{
+    padding: 0;
+    margin: 0;
+}
+
+.navbar ul li{
+    float:left;
+    border-right: 1px solid white;
+    padding: 5px 10px;
+}
+
+.navbar ul li:last-child
+{
+    border-right: none;
+}
+
+.navbar ul li a{
+    display: block;
+    font-size: 20px;
+    padding: 5px 15px;
+    font-family: Georgia;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+
+.navbar a:last-child
+{
+    border-right: none;
+}
+
+
+.navbar a:hover{
+    background-color:lightgray;
+    color:black;
+    opacity:0.8;
+}
+
+#panel1{
+    background-color: #333;
+    opacity: 0.6;
+    height:800px;
+    border-right: 2px solid white;
+
+}
+
+#panel1 h2{
+    color:white;
+    font-family: Cambria;
+    text-align: center;
+}
+
+#panel1 p{
+    color: white;
+    font-size: 17px;
+    font-family: Cambria;
+    text-align:justify;
+}
+
+#myimg{
+    background-image: url('https://yt3.ggpht.com/g3j3iOUOPhNxBCNAArBqiYGzHzCBIzr_Al8mdvtBJeZMGFDblnU5rlVUt6GY01AUwm7Cp70J=s900-c-k-c0x00ffffff-no-rj');
+    height:350px;
+    width: 350px;
+    display: block;
+    background-position: center;
+    background-repeat: no-repeat;
+    backface-visibility: visible;
+    background-size:contain;
+    margin-left: 770px;
+}
+.container{
+    background-color:white;
+    height:100vh;
+}
+
+#passion h2{
+    font-family: Cambria;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 15px;
+}
+
+#passion p{
+    font-family: Cambria;
+    font-size: 20px;
+    margin-top: 15px;
+    margin-left: 20px;
+}
+
+.footer{
+    background-color: #333;
+    height: 300px;
+    box-sizing:content-box;
+    margin:0;
+    
+}
+
+.footer h4
+{
+    color:white;
+    font-size: 24px;
+    font-family: Cambria;
+    margin-left: 40px;
+    margin-top: 20px;
+}
+
+.footer ul li{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    padding:0;
+    margin: 25px;
+    list-style-type: none;
+}
+
+.footer ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+.info{
+    border-right: 1px solid white;
+}
