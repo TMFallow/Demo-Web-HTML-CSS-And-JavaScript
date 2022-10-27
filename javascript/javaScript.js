@@ -7,8 +7,7 @@ function plusSlides(n)
 }
 
 function currentSlide(n) {
-    index = n
-    showSlides(index);
+    showSlides(index = n);
   }
 
 function showSlides(n){
@@ -23,7 +22,7 @@ function showSlides(n){
     }
 
     if(n < 1)
-    {
+    {   
         index = slides.length;
     }
 
@@ -40,3 +39,23 @@ function showSlides(n){
     dot[index-1].className += " active";
     id.innerHTML= dot[index-1].alt;
 }
+
+reveal();
+
+function reveal(){
+    var reveals = document.querySelectorAll(".reveal");
+    for(var i=0; i <reveals.length; i++)
+    {
+        var windowHeight = window.innerHeight; //Khoang Cach Do Cao De Xuat Hien 
+        var elementTop = reveals[i].getBoundingClientRect().top; //Khoang Cach Tu Dau Trang
+        var elementVisible = 150;
+        if(elementTop < windowHeight - elementVisible){
+        reveals[i].classList.add("active");
+        }
+        else{
+            reveals[i].classList.remove("active");
+        }
+    }
+}
+
+window.addEventListener("scroll", reveal);

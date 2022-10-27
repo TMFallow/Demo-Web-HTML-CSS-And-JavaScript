@@ -6,12 +6,23 @@
     position: relative;
 }
 
+.unvisible{
+  display: none;
+}
+
 .slides{
-    display: none;
+    
 }
 
 .cursor{
     cursor: pointer;
+}
+
+#caption
+{
+  font-family: Cambria;
+  padding:-2px;
+  margin-top: 5px;
 }
 
 .prev, .next{
@@ -34,13 +45,11 @@
   border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
 .prev:hover,
 .next:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-/* Number text (1/3 etc) */
 .number {
   color: #f2f2f2;
   font-size: 12px;
@@ -49,7 +58,6 @@
   top: 0;
 }
 
-/* Container for image text */
 .caption-container {
   text-align: center;
   background-color: #222;
@@ -63,13 +71,11 @@
   clear: both;
 }
 
-/* Six columns side by side */
 .column {
   float: left;
   width: 16.66%;
 }
 
-/* Add a transparency effect for thumnbail images */
 .demo {
   opacity: 0.6;
 }
