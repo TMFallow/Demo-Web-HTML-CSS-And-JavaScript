@@ -59,3 +59,24 @@ function reveal(){
 }
 
 window.addEventListener("scroll", reveal);
+
+function autoscroll(text)
+{
+    if(text == 'aboutme')
+    {
+        var el = document.getElementById('aboutme');
+        el.scrollIntoView(true);
+    }
+    if(text == 'mypassion'){
+        var el = document.getElementById('mypassion');
+        el.scrollIntoView();
+    }
+    if(text == 'myambitious'){
+        var el = document.getElementById('myambitious');
+        el.scrollIntoView();
+    }
+    if(text == 'thingsiliked'){
+        var el = document.getElementById('thingsiliked');
+        el.scrollIntoView();
+    }
+}

@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="/css/style.css" >
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="/css/slidePicture.css">
+    <link rel="stylesheet" href="/css/StyleForContent2.css">
     <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
     <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
     <script src="/javascript/javaScript.js"></script>
@@ -18,18 +19,19 @@
 <body>
     <div class="MyBackground">
         <div class="row logo">
-            <div class="col-12">
+            <div class="col-sm-12">
                 <h1>MyWebsite</h1>
             </div>
         </div>
         <div class="row">
             <div class="col-sm-12 navbar">
                 <ul>
-                    <li><a href=#>Home</a></li>
-                    <li><a href=#>Details</a></li>
-                    <li><a href=#>My Passion</a></li>
-                    <li><a href=#>Contact To Me</a></li>
-                    <li> <a href=#>About Me</a></li>
+                    <li><a href=index.html>Home</a></li>
+                    <li><a onclick="autoscroll('aboutme')">About Me</a></li>
+                    <li><a onclick="autoscroll('mypassion')">My Passion</a></li>
+                    <li><a onclick="autoscroll('myambitious')">My Ambitious</a></li>
+                    <li><a onclick="autoscroll('thingsiliked')">Things I Liked</a></li>
+                    <li><a>More Details</a></li>
                 </ul>
             </div>
         </div>
@@ -40,25 +42,17 @@
         </div>
         <div class="row">
             <div class="col-sm-12" id="panel1">
-                <h2>ABOUT ME</h2>
-                <p></p>
-                <p>My name is Phan Thanh Bình (Edward Phan) <br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
-                <div id="myimg"></div>
-                <p style="text-align:center;">My picture</p>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur tempora minima reiciendis culpa distinctio, rem blanditiis dolorem maxime ipsum id explicabo, vel exercitationem earum quasi iste minus? Voluptatem, provident dicta. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa amet eveniet, ipsam animi asperiores non aliquam nemo voluptatum consequuntur consequatur corporis cupiditate libero esse placeat, quia expedita.</p>
-                <p>Cumque, praesentium mollitia?Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum ab error consectetur minima iste velit sunt exercitationem. Illum aut ipsum iste quis! Maxime quis consequuntur cupiditate magni, eveniet ex molestias!</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non quisquam ullam aspernatur repellat consectetur laborum omnis eos voluptate! Animi cumque totam nobis modi id libero autem est, officia praesentium ducimus?
-                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur iste magnam dolor exercitationem, laudantium officia, corporis velit suscipit accusantium sunt qui unde at saepe aut? Hic optio necessitatibus nemo est?
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque doloremque, ea nesciunt vero libero, modi harum odio inventore perferendis hic accusamus nostrum cumque minus voluptatem, repellat ducimus facere obcaecati voluptatum.
-                </p>
-            
+                <h2 id="aboutme">ABOUT ME</h2>
+                <h4>Edward's Website</h4>
+                <h3>Life Is Worth Living <br> As Long As There Is A Laugh In It</h3>
+                <p>Hi, my name is Phan Thanh Bình or (Edward Phan). A guy enrapturing with the natural things</p>
             </div>
         </div>
     </div>
     <div class="row">
         <div class="col-12" id="passion">
-            <h2>MY PASSION</h2>
-            <p>&nbsp;&nbsp;Here is about my Passion</p>
+            <h2 id="mypassion">MY <span>PASSION</span></h2>
+            <p>Here is about my Passion</p>
         </div>
     </div>
     <div class="row" style="height: 1100px;">
@@ -117,25 +111,25 @@
         <div class="col-2"></div>
     </div>
     <div class="row" >
-        <div class="row content1" style="clear:both">
-                <h2>What Is My <span> Ambitious</span> &#8595;</h2>
+        <div class="content1">
+                <h2 id="myambitious">What Is My <span> Ambitious</span> &#8595;</h2>
                 <div class="card" data-aos="fade-left">
                     <img src="https://images.unsplash.com/photo-1661956602153-23384936a1d3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80">
                     <div>  
                         <h4>First Thing</h4>
                         <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure soluta voluptas reprehenderit consequuntur! Sit fugit tempora eos? Corrupti, deleniti omnis, modi inventore blanditiis laborum quasi architecto error sint cumque exercitationem.
                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum quas explicabo sint dolorum ullam eum doloremque veritatis similique eius, possimus quia labore, dolor debitis id iste enim. Repudiandae, minus natus.</p> 
-                        <a href=#>See More...</a>
+                        <a href=#>See More&#10142;</a>
                     </div>
                 </div>
 
                 <div class="card" data-aos="fade-right">
                     <img src="https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8ODd8fGJhY2tncm91bmR8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60">
                     <div>
-                        <h4>Second Thing Thing</h4>
+                        <h4>Second Thing</h4>
                         <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure soluta voluptas reprehenderit consequuntur! Sit fugit tempora eos? Corrupti, deleniti omnis, modi inventore blanditiis laborum quasi architecto error sint cumque exercitationem.
                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum quas explicabo sint dolorum ullam eum doloremque veritatis similique eius, possimus quia labore, dolor debitis id iste enim. Repudiandae, minus natus.</p> 
-                        <a href=#>See More...</a>
+                        <a href=#>See More&#10142;</a>
                     </div>
                 </div>
 
@@ -145,10 +139,45 @@
                         <h4>Third Thing</h4>
                         <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure soluta voluptas reprehenderit consequuntur! Sit fugit tempora eos? Corrupti, deleniti omnis, modi inventore blanditiis laborum quasi architecto error sint cumque exercitationem.
                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum quas explicabo sint dolorum ullam eum doloremque veritatis similique eius, possimus quia labore, dolor debitis id iste enim. Repudiandae, minus natus.</p> 
-                        <a href=#>See More...</a>
+                        <a href=#>See More&#10142;</a>
                     </div>
                 </div>
-            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="content2">
+            <h2 id="thingsiliked" data-aos="fade-up">Things I Liked</h2>
+            
+                <div class="box" data-aos="fade-left">
+                    <div>
+                        <h3>Listening Music</h3>
+                        <p>&#10132; &nbsp;&nbsp;&nbsp;&nbsp;Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque, natus, labore odio expedita fugiat recusandae nulla eaque quam beatae ad, quas facere officiis et aliquam alias ullam mollitia eum maxime. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat magni dignissimos perspiciatis natus. Hic qui, numquam quo mollitia soluta pariatur quas! Pariatur, ipsa necessitatibus. Quae nostrum quibusdam repellat non ullam.</p>
+                        <img src="https://images.unsplash.com/photo-1501238295340-c810d3c156d2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjF8fG11c2ljJTIwZmVzdGl2YWx8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60">
+                    </div>
+                </div>
+         
+
+        
+                <div class="box" data-aos="fade-up">
+                    <div>
+                        <h3>New Language</h3>
+                        <p>&#10132; &nbsp;&nbsp;&nbsp;&nbsp;Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque, natus, labore odio expedita fugiat recusandae nulla eaque quam beatae ad, quas facere officiis et aliquam alias ullam mollitia eum maxime. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat magni dignissimos perspiciatis natus. Hic qui, numquam quo mollitia soluta pariatur quas! Pariatur, ipsa necessitatibus. Quae nostrum quibusdam repellat non ullam.</p>
+                        <img src="https://images.unsplash.com/photo-1543165796-5426273eaab3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8bGFuZ3VhZ2V8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60">
+                    </div>
+                </div>
+       
+
+        
+                <div class="box" data-aos="fade-right">
+                    <div>
+                        <h3>Art & Design</h3>
+                        <p>&#10132; &nbsp;&nbsp;&nbsp;&nbsp;Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque, natus, labore odio expedita fugiat recusandae nulla eaque quam beatae ad, quas facere officiis et aliquam alias ullam mollitia eum maxime. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat magni dignissimos perspiciatis natus. Hic qui, numquam quo mollitia soluta pariatur quas! Pariatur, ipsa necessitatibus. Quae nostrum quibusdam repellat non ullam.</p>
+                        <img src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8YXJ0fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60">
+                    </div>
+                </div>
+         
+
+        </div>
     </div>
     <div class="row">
         <div class="col-12">
@@ -157,7 +186,7 @@
                     <div class="col-2 info">
                         <h4>For More Infomation</h4>
                         <ul>
-                            <li><span class="glyphicon">&#xe144;</span> &nbsp;TBinh.@gmail.com</li>
+                            <li><span>&#xe144;</span> &nbsp;TBinh.@gmail.com</li>
                             <li>(+84) 123-456-789</li>
                             <li><a href=https://Facebook.com>My FaceBook</a></li>
                             <li><a href=https://www.instagram.com>My Instagram</a></li>
@@ -170,13 +199,16 @@
                                 Name: &nbsp;<input type="text" placeholder="Your Full Name" style="margin-left:29px">
                             </li>
                             <li>
-                                Email: &nbsp; <input type="email" placeholder="Your Email" style="margin-left:29px">
+                                Email: &nbsp; <input type="email" placeholder="Your Email" style="margin-left:25px">
                             </li>
                             <li>
                                 Password: &nbsp; <input type="password" placeholder="Your Password">
                             </li>
                             <li><button class="btn btn-light">Register</button></li>
                         </ul>
+                    </div>
+                    <div class="col-3 myname">
+                        <p>&#9787; Edward Phan</p>
                     </div>
                     <div class="location">
                         <h4>Location: </h4>
@@ -186,15 +218,15 @@
             </div>
         </div>
     </div>
-    <div class="row">
+    <footer class="row">
         <div class="col-12 end">
             <h4>This Website Is Belong To Edward Phan</h4>
         </div>
-    </div>
+    </footer>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init({
-            offset:200,
+            offset:300,
             duration:1000
         });
     </script>
