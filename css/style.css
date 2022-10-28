@@ -6,29 +6,30 @@
 
 
 .MyBackground{
-    background-image: url('https://www.kibrispdr.org/data/29/chill-wallpaper-hd-11.jpg');
+    background-image: url('https://images.unsplash.com/photo-1463288889890-a56b2853c40f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     background: linear-gradient(to top, rgba(0,0,0,5));
-    width:100vw;
+    width:100%;
     height:100vh;
-    font-family: sans-serif;
-    opacity: 99%;
+    font-family: georgia;
+    
 }
 
+
 .content1{
-    max-width: 1100px;
+    max-width: 1000px;
     padding: 0 2rem;
     margin: auto;
-    overflow: auto;
 }
 
 .content1 h2{
-    font-family: Cambria;
+    font-family: Georgia;
     font-size: 40px;
     margin-left: 0;
     text-align: center;
+    margin-bottom: 3rem;
 }
 
 .content1 h2 span{
@@ -39,6 +40,21 @@
     width: 100%;
 
 }
+
+@media (max-width:500px)
+{
+    .content1{
+        display: block;
+
+    }
+    .content2{
+        display: block;
+    }
+    .box{
+        display: block;
+    }
+}
+
 
 .card{
     display: grid;
@@ -58,6 +74,26 @@
     height: 300px;
 }
 
+.card a{
+    text-decoration: none;
+    color:black
+}
+
+@media (prefers-reduced-motion: no-preference){
+.card a:hover{
+    animation: changeSize 1s 1;
+}
+}
+
+@keyframes changeSize {
+    0%{
+        transform: scale(0.5,0.25);
+    }
+    50%{
+        transform: scale(1,0.25);
+    }
+}
+
 .card:nth-child(even) img{
     order: 2;
 }
@@ -70,7 +106,7 @@
 .logo h1{
     width: 100px;
     height: 30px;
-    font-family:Cambria;
+    font-family:Georgia;
     padding: 0;
     text-align: center;
     margin:2px, 2px, 2px, 2px;
@@ -93,6 +129,13 @@
     float:left;
     border-right: 1px solid white;
     padding: 5px 10px;
+    list-style-type:none;
+    color: white;
+}
+
+.navbarul li:hover{
+    background-color:lightgray;
+    color:black;
 }
 
 .navbar ul li:last-child
@@ -128,20 +171,47 @@
     height:800px;
     width:2040px;
     border-right: 2px solid white;
+    padding: 1rem;
 
 }
 
 #panel1 h2{
     color:white;
-    font-family: Cambria;
+    margin: 1rem;
+    padding: auto;
+    font-size: 50px;
+    font-family: georgia;
     text-align: center;
+}
+
+#panel1 h3{
+    color:white;
+    margin: -3rem;
+    margin-left: 6rem;
+    padding: 0.5rem;
+    padding: auto;
+    font-size: 40px;
+    font-family: georgia;
+}
+
+#panel1 h4{
+    color:white;
+    margin: 5rem;
+    margin-left: 6.2rem;
+    padding: auto;
+    font-size: 20px;
+    font-family: georgia;
 }
 
 #panel1 p{
     color: white;
     font-size: 17px;
-    font-family: Cambria;
-    text-align:justify;
+    font-family: georgia;
+    width:fit-content;
+    padding: 0.2rem;;
+    padding: 1rem;
+    margin-top: 3rem;
+    margin-left: 5.6rem;
 }
 
 #myimg{
@@ -161,17 +231,23 @@
 }
 
 #passion h2{
-    font-family: Cambria;
-    font-size: 50px;
+    font-family: georgia;
+    font-size: 70px;
     text-align: center;
     margin-top: 15px;
+    padding: 2rem;
+}
+
+#passion h2 span{
+    color:darkkhaki;
 }
 
 #passion p{
-    font-family: Cambria;
-    font-size: 20px;
-    margin-top: 15px;
-    margin-left: 20px;
+    font-family: Georgia;
+    font-size: 40px;
+    margin: 1rem;
+    padding-bottom: 1rem;
+    text-align: center;
 }
 
 .footer{
@@ -219,20 +295,27 @@
     margin-left: 400px;
 }
 
+.register h4{
+    margin-left: 7rem;
+}
+
 .info:last-child{
     border-right: none;
 }
 
 .info ul li input{
     text-align: left;
-    font-family: Cambria;
+    font-family: georgia;
 }
 
+.info ul li{
+    font-family: georgia;
+}
 .info ul li button{
-    width: 287px;
+    width: 255px;
     height: 30px;
     font-size: 17px;
-    font-family: Cambria;
+    font-family: georgia;
 }
 
 .location{
@@ -242,7 +325,7 @@
 
 .location h4{
     color: white;
-    font-family: Cambria;
+    font-family: georgia;
 }
 
 .location iframe{
@@ -260,61 +343,14 @@
 .end h4{
     color: white;
     font-size: 25px;
-    font-family: Cambria;
+    font-family: georgia;
     text-align: center;
-    margin-top: 25px;
+    margin: 1rem;
+    padding: 0.2rem;
 }
 
-.textcontainer
-{
-    display: flex;
-}
 
-.textcontainer .textbox{
-    margin: 20px;
-    padding: 20px;
-    background: #333;
-    opacity: 0.8;
-}
-
-.textcontainer .textbox h3{
-    color: white;
-    font-size: 30px;
-    font-family: Cambria;
-    text-align: center;
-}
-
-.textcontainer .textbox p{
-    color: white;
-    font-size: 15px;
-    font-family: Cambria;
-    text-align: justify;
-    line-height: 1cm;
-}
-
-.textcontainer .textbox a{
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-    font-family: Cambria;
-    text-align: justify;
-    line-height: 1cm;
-}
-
-.reveal{
-    position: relative;
-    transform: translateY(150px);
-    opacity: 0;
-    transition: 2s all ease;
-}
-
-.reveal.active
-{
-    transform: translateY(0);
-    opacity: 1;
-}
-
-@media (max-width: 200px) {
+@media (max-width: 600px) {
     .textcontainer{
         flex-direction: column;
     }
@@ -338,4 +374,16 @@
     50%{
         transform: scale(1.1);
     }
+}
+
+.myname{
+    margin-left: 70rem;
+    margin-top: 9rem;
+}
+.myname p{
+    color: white;
+    font-size: 30px;
+    font-family: Georgia;
+    font-style: italic;
+
 }

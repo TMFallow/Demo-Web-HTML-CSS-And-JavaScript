@@ -1,0 +1,46 @@
+.content2{
+    background:black;
+    opacity: 0.88;
+    background:linear-gradient(to bottom white black);
+    height:1000px;
+    overflow: auto;
+    
+}
+
+.content2 h2{
+    font-size: 70px;
+    font-family: Georgia;
+    color: white;
+    text-align: center;
+    margin: 3rem;
+}
+
+.box{
+    display: block;
+    margin-left: 10rem;
+    border: 0.8px solid white;
+    width: 400px;
+    float: left;
+}
+
+.box h3{
+    color: white;
+    font-family: georgia;
+    font-size: 40px;
+    text-align: center;
+    padding: 1rem;
+    margin: 2rem;
+}
+
+.box p{
+    color:white;
+    font-family: georgia;
+    text-align: justify;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.box img{
+    width: 100%;
+    padding: 1rem;
+}
